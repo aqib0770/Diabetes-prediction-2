@@ -1,8 +1,8 @@
 from flask import Flask,render_template,app,request
 import pickle
 
-app=Flask(__name__)
-
+application=Flask(__name__)
+app=application
 
 scaler=pickle.load(open('models/scaler.pkl','rb'))
 model=pickle.load(open('models/svc_classifier.pkl','rb'))
